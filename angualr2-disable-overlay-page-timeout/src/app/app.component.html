@@ -1,0 +1,30 @@
+
+<h1>
+  {{title}}
+</h1>
+<button (click)="isOverlayVisible = !isOverlayVisible;">Toggle Disable</button>
+<div [ngClass]="{'overlay': isOverlayVisible }">
+	
+	isOverlayVisible : {{isOverlayVisible }}
+	<br>
+	<button   id="btn" (click)="disableDiv()">Disable from method</button>
+	<br><br>
+	<button id="btn">Other Button </button>
+
+
+	<h2> Sample text</h2>
+
+	<p> To disable complete page add the div tag on start of file/above all the tags </p>
+
+
+
+
+
+	<!-- Post Info -->
+	<div style='position:fixed;bottom:0;left:0;    
+				background:lightgray;width:100%;'>
+		Based off this SO Post: <a href='http://stackoverflow.com/q/3250790/1366033'>Making a div that covers the entire page</a><br/>
+		Based off this SO Post: <a href='http://stackoverflow.com/q/6840326/1366033'>create and style a div using JavaScript?</a><br/>
+		@ <a href='http://codevik.com'> codevik.com </a><br/>
+	<div> 
+</div>
