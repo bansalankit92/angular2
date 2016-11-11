@@ -1,5 +1,7 @@
 ## Angular2 ng2 PDF Thumbnail and PDF viewer in IFrame and Object HTML5 Tags
 
+If you want to use PDF viewer as separate Component and Angular routing to that component
+
 The project is made using angular-cli
 See here for more informations:
 
@@ -26,6 +28,7 @@ If using angular-cli, Go on the project's root folder, then type:
 
     $ npm install
     $ ng serve
+    
 
 #### From any IDE 
     First You will need to install all the npm packages using `npm install` command from terminal in project root folder

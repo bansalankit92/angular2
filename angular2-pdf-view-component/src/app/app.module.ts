@@ -4,12 +4,17 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
+import {MyPdfViewerComponent}from "./pdf-viewer/pdf-viewer.component";
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PdfViewerComponent
+    PdfViewerComponent,
+    MyPdfViewerComponent,
   ],
   imports: [
     BrowserModule,

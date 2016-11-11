@@ -1,0 +1,32 @@
+<div class="container">
+  <div>
+    <label>PDF src</label>
+    <input type="text" placeholder="PDF src" [(ngModel)]="pdfSrc">
+  </div>
+  <div>
+    <label>Page:</label>
+    <input type="number" placeholder="Page" [(ngModel)]="page">
+  </div>
+  <div class="row">
+    <div class="col-md-5">
+      <div class="thumbnail" style="width: 150px;height: 200px;" (click)="pdfShow=!pdfShow">
+        <p>click me to view PDF in Iframe!</p>
+        <pdf-viewer [src]="pdfSrc"
+                    [page]="page"
+                    [original-size]="false"
+                    style="display: block;"
+          ></pdf-viewer>
+      </div>
+      <br>
+    </div>
+    <div class="col-md-7">
+      <div *ngIf="pdfShow">
+        <h4>PDF in Iframe</h4>
+        <iframe width="500" height="600" [src]="pageurl" type="application/pdf"></iframe>
+      </div>
+    </div>
+  </div>
+<br><br>
+  <h2> PDF in Object Tag</h2>
+  <object width="500" height="600"  data="https://vadimdez.github.io/ng2-pdf-viewer/pdf-test.pdf" type="application/pdf"></object>
+</div>

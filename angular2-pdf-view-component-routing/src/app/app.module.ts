@@ -4,19 +4,25 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { routing, appRoutingProviders } from './app.routing'
+
 import { PdfViewerComponent } from 'ng2-pdf-viewer';
+import {MyPdfViewerComponent}from "./pdf-viewer/pdf-viewer.component";
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    PdfViewerComponent
+    PdfViewerComponent,
+    MyPdfViewerComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
-
+    HttpModule,
+    routing
   ],
-  providers: [],
+  providers: [appRoutingProviders],
   bootstrap: [AppComponent]})
 export class AppModule { }
