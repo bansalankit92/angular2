@@ -1,0 +1,16 @@
+
+<div class="container">
+  <div class="jumbotron">
+    <h2 class="text-center">Date Range Picker</h2>
+    <div class="form-group">
+      <input appDateRangePick
+             (selected)="dateSelected($event)"
+             [options]="pickerOptions" type="submit"
+             class="form-control btn btn-success"/>
+    </div>
+  </div>
+  start date = {{dateRange.startDate}}
+  <br> end date = {{dateRange.endDate}}
+</div>
+
+
