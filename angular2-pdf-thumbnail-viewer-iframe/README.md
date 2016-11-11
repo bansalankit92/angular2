@@ -1,7 +1,8 @@
 ## Angular2 ng2 PDF Thumbnail and PDF viewer in IFrame and Object HTML5 Tags
 
 The project is made using angular-cli
-See here for more informations:
+
+See here for more informations: http://codevik.com/2016/11/11/angular2-ng2-pdf-thumbnail-creation-viewer/
 
 ### Build and run
 
