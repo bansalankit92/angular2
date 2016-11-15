@@ -2,7 +2,7 @@
 
 The project is made using angular-cli
 
-See here for more informations: http://codevik.com/
+See here for more informations: http://codevik.com/2016/11/14/angular2-daterange-picker-directive/
 
 ### Build and run
 
